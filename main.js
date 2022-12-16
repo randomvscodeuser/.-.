@@ -8,8 +8,8 @@ block_image_height = 430;
 
 var block_image_object= "";
 
-function new_image(get_image)
-{
+
+
 	function new_image(get_image){
 		fabric.Image.fromURL(get_image, function(Img){
 			block_image_object = Img;
@@ -22,7 +22,7 @@ function new_image(get_image)
 			canvas.add(block_image_object);
 		});
 	}
-}
+
 
 window.addEventListener("keydown", my_keydown);
 
